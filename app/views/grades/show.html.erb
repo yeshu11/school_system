@@ -1,0 +1,18 @@
+
+<p id="notice"><%= notice %></p>
+
+<table>
+	<thead>
+		<th>name</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%=@grade.name%></td>
+			<td><%=@grade.description%></td>
+		</tr>
+	</tbody>
+</table>
+
+<%= link_to 'Edit', edit_grade_path(@grade) %> |
+<%= link_to 'Back', grades_path %>

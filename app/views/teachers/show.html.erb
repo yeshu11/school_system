@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+	<thead>
+		<th>name</th>
+		<th>Gender</th>
+		<th>Phone</th>
+		<th>Email</th>
+		<th>Address</th>
+		<th>subject</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%=@teacher.name%></td>
+			<td><%=@teacher.gender%></td>
+			<td><%=@teacher.phone%></td>
+			<td><%=@teacher.email%></td>
+			<td><%=@teacher.address%></td>
+			<td><%=@teacher.subject.name%></td>
+		</tr>
+	</tbody>
+</table>
+
+<%= link_to 'Edit', edit_teacher_path(@teacher) %> |
+<%= link_to 'Back', teachers_path %>

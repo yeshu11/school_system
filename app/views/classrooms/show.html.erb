@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+	<thead>
+		<th>name</th>
+		<th>year</th>
+		<th>section</th>
+		<th>remarks</th>
+		<th>teacher</th>
+		<th>status</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%=@classroom.name%></td>
+			<td><%=@classroom.year%></td>
+			<td><%=@classroom.section%></td>
+			<td><%=@classroom.remarks%></td>
+			<td><%=@classroom.teacher.name%></td>
+			<td><%=@classroom.status%></td>
+		</tr>
+	</tbody>
+</table>
+
+<%= link_to 'Edit', edit_classroom_path(@classroom) %> |
+<%= link_to 'Back', classrooms_path %>

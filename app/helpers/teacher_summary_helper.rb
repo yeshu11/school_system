@@ -1,0 +1,2 @@
+module TeacherSummaryHelper
+end

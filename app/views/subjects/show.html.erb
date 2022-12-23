@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+	<thead>
+		<th>name</th>
+		<th>description</th>
+		<th>grade</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%=@subject.name%></td>
+			<td><%=@subject.description%></td>
+			<td><%=@subject.grade.name%></td>
+		</tr>
+	</tbody>
+</table>
+
+<%= link_to 'Edit', edit_subject_path(@subject) %> |
+<%= link_to 'Back', subjects_path %>
