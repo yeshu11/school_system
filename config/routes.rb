@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  scope 'auth' do
+  scope 'autho' do
     devise_for :teachers
     devise_for :users
     devise_for :students
@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   #   get 'users/login' to: 'users#sessions#new', as 'user_login'
   # end
 
-  # devise_scope :teacher do
-  #   get 'teachers/login' to: 'teachers#sessions#new', as 'teacher_login'
+  # scope 'autho' do
+  #   # get 'teachers/login' to: 'teachers#sessions#new', as 'teacher_login'
   # end
 
   resources :teachers

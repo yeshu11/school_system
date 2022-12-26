@@ -1,0 +1,28 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sider Menu Bar CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <div style="height: 100vh; display: flex; flex-direction: column; overflow: hidden">
+      <div class="sidebar">
+      <header>My App</header>
+      <ul>
+        <li><%= link_to 'Dashboard',dashboard_index_path,class:"fas fa-qrcode"%></li>
+        <li><%= link_to 'Teachers',teachers_path,class:"far fa-envelope"%></li>
+        <li><%= link_to 'Students',students_path,class:"fas fa-link"%></li>
+        <li><%= link_to 'Classrooms',classrooms_path,class:"fas fa-stream"%></li>
+        <li><%= link_to 'Grades',grades_path,class:"fas fa-calendar-week"%></li>
+        <li><%= link_to 'Subjects',subjects_path,class:"far fa-question-circle"%></li>
+        <li><%= link_to 'Attendances',attendances_path,class:"fas fa-sliders-h"%></li>
+    </ul>
+    </div>
+   </div>
+   <section></section>
+  </body>
+</html>
+
+
+
